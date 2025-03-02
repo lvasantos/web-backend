@@ -1,0 +1,195 @@
+/* General Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* main content and search section horizontally */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* Space between sections */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*  START OF FORM STYLING */
+/* Search Section */
+.search-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Group Input and Button in a Row */
+.search-item {
+    display: flex;
+    /* align-items: center; */
+    align-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+/* Input Styling */
+input[type="text"] {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* END OF FORM STYLING */
+
+/* START OF SEARCH STYLING */
+/* Main Content */
+.main-content {
+    flex: 2;
+    background-color: #222;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/*  END OF SEARCH STYLING */
+
+
+/* START OF NAVIGATION STYLING */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #444;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Highlight User Info */
+/* .user-info span {
+    font-weight: bold;
+    color: #E8C547;
+} */
+
+.visitors b {
+    color: #E8C547;
+}
+
+/* .navbar li b {
+    color: #E8C547;
+} */
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background-color: #E74C3C;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #C0392B;
+}
+
+/* END OF NAVIGATION STYLING */
+
+/* START OF BUTTON STYLING */
+.logout-btn {
+    display: flex;
+    align-items: center;
+    background-color: #E74C3C;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #C0392B;
+    transform: scale(1.05);
+}
+
+
+/* Search Button */
+button {
+    background-color: #E8C547;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #C49A32;
+}
+
+/* Response */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logout-btn {
+        margin-top: 10px;
+    }
+}
